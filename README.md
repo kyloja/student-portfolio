@@ -15,7 +15,6 @@
 - Pull Request: https://github.com/kyloja/student-portfolio/pull/1
 - Issues: https://github.com/kyloja/student-portfolio/issues
 - Actions: https://github.com/kyloja/student-portfolio/actions
-- Project: (вставь ссылку на свой Project)
 
 ## Выводы
 Научился работать с ветками, Pull Request, Issues, Projects и GitHub Actions.
