@@ -13,7 +13,7 @@ int main()
 	cout << "\nВведите цвет светофора (red, yellow, green): ";
 	cin >> color;
 
-	switch (color[0]) // смотрим только первую букву
+	switch (color[0])
 	{
 	case 'r':
 		cout << "Стой!\n";
