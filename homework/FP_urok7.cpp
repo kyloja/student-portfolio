@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <clocale>
 
 using namespace std;
 
@@ -10,21 +9,19 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	srand(time(0));
 
-	// ===================== ЗАДАНИЕ ОНЕ =====================
-	cout << "\n\t\t ЗАДАНИЕ ОНЕ";
+	cout << "\n\t\t ЗАДАНИЕ 1";
 	cout << "\nДвумерный массив 3x4. Считаем количество нулей.\n";
 
 	const int rows1 = 3;
 	const int cols1 = 4;
 	int arr1[rows1][cols1];
 
-	// заполняем случайными числами от -5 до 5
 	cout << "\nМассив:\n";
 	for (int i = 0; i < rows1; i++)
 	{
 		for (int j = 0; j < cols1; j++)
 		{
-			arr1[i][j] = rand() % 11 - 5; // -5 ... 5
+			arr1[i][j] = rand() % 11 - 5;
 			cout << arr1[i][j] << "\t";
 		}
 		cout << "\n";
@@ -44,9 +41,7 @@ int main()
 
 	cout << "\nКоличество нулей: " << zeroCount << "\n";
 
-
-	// ===================== ЗАДАНИЕ ТУ =====================
-	cout << "\n\t\t ЗАДАНИЕ ТУ";
+	cout << "\n\t\t ЗАДАНИЕ 2";
 	cout << "\nКвадратная матрица порядка n.";
 	cout << "\nНайти наибольшее в тёмно-синей области (рисунки a-k).\n";
 
@@ -60,7 +55,6 @@ int main()
 	}
 	else
 	{
-		// создаём матрицу (максимум 20x20, как обычно в таких работах)
 		const int MAX = 20;
 		int arr2[MAX][MAX];
 
@@ -69,7 +63,7 @@ int main()
 		{
 			for (int j = 0; j < n; j++)
 			{
-				arr2[i][j] = rand() % 50; // 0 ... 49
+				arr2[i][j] = rand() % 50;
 				cout << arr2[i][j] << "\t";
 			}
 			cout << "\n";
@@ -90,7 +84,7 @@ int main()
 		char variant;
 		cin >> variant;
 
-		// ищем максимум только в "синей" зоне
+
 		int maxVal = -1;
 		bool found = false;
 
